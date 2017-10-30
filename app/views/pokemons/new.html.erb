@@ -1,0 +1,4 @@
+<%= simple_form_for @pokemon, :url => '/trainers/:id(.:format)', defaults: { health: 100 , level: 1 } do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>
